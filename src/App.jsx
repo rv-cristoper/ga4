@@ -2,9 +2,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ReactGA from "react-ga4";
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const TRACKING_ID = 'G-Z5NJ8QL119';
+  ReactGA.initialize(TRACKING_ID);
 
   return (
     <>
