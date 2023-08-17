@@ -12,11 +12,8 @@ function App() {
 
   const handleCount = () => {
     setCount((count) => count + 1)
-    ReactGA.event({
-      category: 'Button',
-      action: 'Click',
-      label: 'Counting'
-    });
+    console.log("first")
+    ReactGA.event('BUY_CRYPTO');
   }
   return (
     <>
