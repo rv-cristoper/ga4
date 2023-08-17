@@ -10,6 +10,14 @@ function App() {
   const TRACKING_ID = 'G-Z5NJ8QL119';
   ReactGA.initialize(TRACKING_ID);
 
+  const handleCount = () => {
+    setCount((count) => count + 1)
+    ReactGA.event({
+      category: 'Button',
+      action: 'Click',
+      label: 'Counting'
+    });
+  }
   return (
     <>
       <div>
@@ -22,7 +30,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={handleCount}>
           count is {count}
         </button>
         <p>
