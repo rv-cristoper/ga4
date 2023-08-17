@@ -4,29 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ReactGA from "react-ga4";
 
+const TRACKING_ID = 'G-Z5NJ8QL119';
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   const [count, setCount] = useState(0)
 
-  const TRACKING_ID = 'G-Z5NJ8QL119';
-  ReactGA.initialize(TRACKING_ID);
-
   const handleCount = () => {
     setCount((count) => count + 1)
-    console.log("sss")
-    ReactGA.event("login", { method: "Google" });
-    ReactGA.event({
-      action: "click",
-      category: "button",
-      label: "count",
-    });
-    ReactGA.event({
-      category: 'tu categoría',
-      action: 'tu acción',
-      label: 'tu etiqueta', // opcional
-      value: 99, // opcional, debe ser un número
-      nonInteraction: true, // opcional, verdadero/falso
-      transport: 'xhr', // opcional, beacon/xhr/image
-    });
+    ReactGA.event("BUY_CRYPTO")
+    // console.log("sss")
+    // ReactGA.event("login", { method: "Google" });
+    // ReactGA.event({
+    //   action: "click",
+    //   category: "button",
+    //   label: "count",
+    // });
+    // ReactGA.event({
+    //   category: 'tu categoría',
+    //   action: 'tu acción',
+    //   label: 'tu etiqueta', // opcional
+    //   value: 99, // opcional, debe ser un número
+    //   nonInteraction: true, // opcional, verdadero/falso
+    //   transport: 'xhr', // opcional, beacon/xhr/image
+    // });
   }
   return (
     <>
