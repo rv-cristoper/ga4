@@ -2,8 +2,8 @@ import ReactGA from 'react-ga';
 
 export const Deposit = () => {
     ReactGA.event({
-        category: 'Depositar',
-        action: 'Se realizó un deposito',
+        category: 'depositar',
+        action: 'se_realizo_un_deposito',
     });
 }
 
