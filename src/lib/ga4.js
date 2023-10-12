@@ -1,9 +1,17 @@
-import ReactGA from "react-ga4";
+import ReactGA from 'react-ga';
 
 export const Deposit = () => {
-    ReactGA.event("Depositar")
+    ReactGA.event({
+        category: 'Button',
+        action: 'Depositar',
+        label: 'Depositar 1'
+    });
 }
 
 export const Withdraw = () => {
-    ReactGA.event("Retirar")
+    ReactGA.event({
+        category: 'Button',
+        action: 'Retirar',
+        label: 'Retirar 1'
+    });
 }
