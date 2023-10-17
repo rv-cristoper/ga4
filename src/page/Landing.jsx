@@ -10,11 +10,12 @@ const Landing = () => {
         //     label: "Compra de BTC"
         // });
         console.log('Se hizo click en depositar')
-        window.gtag('event', 'Depositar', {
-            'event_category': 'Compra',
-            'event_label': 'Compra de BTC',
-            'value': 1  // Puedes ajustar el valor según sea necesario
-        });
+        // window.gtag('event', 'Depositar', {
+        //     'event_category': 'Compra',
+        //     'event_label': 'Compra de BTC',
+        //     'value': 1  // Puedes ajustar el valor según sea necesario
+        // });
+        window.gtag('event', 'Depo_BTC');
     }
     const withdraw = () => {
         // ReactGA.event({
@@ -23,11 +24,12 @@ const Landing = () => {
         //     label: "Venta de BTC"
         // });
         console.log('Se hizo click en retirar')
-        window.gtag('event', 'Retirar', {
-            'event_category': 'Venta',
-            'event_label': 'Venta de BTC',
-            'value': 1  // Puedes ajustar el valor según sea necesario
-        });
+        // window.gtag('event', 'Retirar', {
+        //     'event_category': 'Venta',
+        //     'event_label': 'Venta de BTC',
+        //     'value': 1  // Puedes ajustar el valor según sea necesario
+        // });
+        window.gtag('event', 'Reti_BTC');
     }
     return (
         <div>
