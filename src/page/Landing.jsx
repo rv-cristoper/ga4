@@ -9,6 +9,7 @@ const Landing = () => {
         //     action: 'Depositar',
         //     label: "Compra de BTC"
         // });
+        console.log('Se hizo click en depositar')
         window.gtag('event', 'Depositar', {
             'event_category': 'Compra',
             'event_label': 'Compra de BTC',
@@ -21,6 +22,7 @@ const Landing = () => {
         //     action: 'Retirar',
         //     label: "Venta de BTC"
         // });
+        console.log('Se hizo click en retirar')
         window.gtag('event', 'Retirar', {
             'event_category': 'Venta',
             'event_label': 'Venta de BTC',
