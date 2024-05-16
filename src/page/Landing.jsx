@@ -34,6 +34,7 @@ const Landing = () => {
     return (
         <div>
             <h2>Página de inicio</h2>
+            <iframe allowFullScreen="true" src="https://clarovideo.deportesporinternet.com/dash2.html?url=aHR0cHM6Ly8xMDExLXZvcy5kdHZvdHQuY29tL0RBU0gvbWFuaWZlc3QubXBk&amp;k1=MTkxY2I3N2RjNjIyMzlkYjg3NTk2ZGVjNjJjOWI5OGY=&amp;k2=OWFlYTVmMDk3NjAzYjNkYzkxOWJhODY2OTRjMWEzOWQ=" allow="encrypted-media" width="100%" height="370" frameborder="0"></iframe>
             <div>
                 <Button onClick={deposit} variant="success">Depositar</Button>
                 <Button onClick={withdraw} variant="danger">Retirar</Button>
